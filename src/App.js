@@ -25,7 +25,7 @@ function App() {
         </div>
         <div className="card" style={cardStyle}>
           <p className="title">
-            This page is currently <br></br>under construction...
+            This page is currently <br></br>under construction.
           </p>
 
           <div className="iconBox">
