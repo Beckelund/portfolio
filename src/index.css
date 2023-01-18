@@ -1,0 +1,90 @@
+
+/*Poppins font from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*
+// Colors
+$bg-color: hsl(256,33,10);
+$dot-color: hsl(256,33,70);
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 22px;
+
+card {
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+}
+*/
+
+.App-header {
+  background: rgb(35, 33, 33);
+  background-image: radial-gradient(rgb(101, 101, 101) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0px 0px;
+}
+
+.nameDisplay {
+  width: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.name {
+  margin: 0;
+  color: rgb(253, 246, 229);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.card {
+  
+  background-color: rgb(35, 33, 33);
+  
+
+  height: 25rem;
+  width: 60rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  color: rgb(253, 246, 229);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  transition: 0.2s;
+}
+
+.icon:hover {
+  transform: translate(0, -0.3rem);
+}
