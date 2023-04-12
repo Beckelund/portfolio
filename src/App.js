@@ -12,20 +12,26 @@ import { Typography } from "@mui/material";
 //Custom Components
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
     <div className="app">
-      <Welcome></Welcome>
-      <Typography sx={{ textAlign: "center", fontSize: "1rem" }}>
-        this page is currently under construction, but in the meantime...
-      </Typography>
-      <Typography
-        sx={{ textAlign: "center", fontSize: "3rem", margin: "0 0 10rem 0" }}
-      >
-        check out some of my projects down below!
-      </Typography>
-      <Projects></Projects>
+      <ParallaxProvider>
+        <Parallax speed={20} easing={"easeOut"}>
+          <Welcome></Welcome>
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: "3rem",
+              margin: "0 0 10rem 0",
+            }}
+          >
+            check out some of my projects down below!
+          </Typography>
+          <Projects></Projects>
+        </Parallax>
+      </ParallaxProvider>
     </div>
   );
 }

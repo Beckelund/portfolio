@@ -20,6 +20,33 @@ export const portfolioTheme = createTheme({
             width: "10rem",
           },
         },
+        {
+          props: { className: "demoButton" },
+          style: {
+            color: "white",
+            borderColor: "white",
+            width: "10rem",
+            backgroundColor: "rgba(255, 29, 29, 0.8)",
+            "&:hover": {
+              backgroundColor: "rgba(255, 29, 29, 1)",
+            },
+          },
+        },
+      ],
+    },
+
+    MuiLink: {
+      variants: [
+        {
+          props: { className: "socials" },
+          style: {
+            transition: "0.4s ease-out",
+            "&:hover": {
+              transition: "0.1s ease-out",
+              transform: "translateY(-5px)",
+            },
+          },
+        },
       ],
     },
 
@@ -49,12 +76,6 @@ export const portfolioTheme = createTheme({
             justifyContent: "center",
           },
         },
-        {
-          props: { className: "links" },
-          style: {
-            display: "flex",
-          },
-        },
       ],
     },
 
@@ -74,8 +95,8 @@ export const portfolioTheme = createTheme({
             body2: "span",
         },
         */
-        fontFamily: "Poppins",
-        color: "white",
+        fontFamily: "epilogue",
+        color: "rgb(253, 246, 229);",
       },
       variants: [
         {
@@ -90,7 +111,7 @@ export const portfolioTheme = createTheme({
         {
           props: { className: "projectseperatetext" },
           style: {
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             textAlign: "left",
             marginTop: "1rem",
           },
@@ -114,7 +135,12 @@ export const portfolioTheme = createTheme({
             flexDirection: "column",
             justifyContent: "center",
 
+            "& .MuiCardMedia-root": {
+              transition: "0.5s ease-out",
+            },
+
             "&:hover .MuiCardMedia-root": {
+              transition: "0.1s ease-out",
               opacity: 0.9,
             },
 
@@ -179,6 +205,29 @@ export const portfolioTheme = createTheme({
           },
         },
       ],
+    },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          //fontSize: "6rem",
+          backgroundColor: "rgba(20,20,20,1.0)",
+          borderColor: "white",
+          borderStyle: "solid",
+          borderWidth: "0.1rem",
+          color: "white",
+          minHeight: "30vh",
+
+          //Font size
+          "& .MuiTypography-h6": {
+            fontSize: "4rem",
+          },
+
+          //Font size p
+          "& .MuiTypography-body1": {
+            fontSize: "1.5rem",
+          },
+        },
+      },
     },
   },
 });

@@ -5,20 +5,26 @@ import LargeProjectCard from "./LargeProjectCard";
 
 //Images
 //import Pearl4 from "../media/Pearl4.png";
-import starry from "../media/starry.png";
+//import starry from "../media/starry.png";
 //import wedding from "../media/wedding.png";
 //import wanderer from "../media/wanderer.png";
 import pixelfire from "../media/pixelfire.gif";
 //import pixelfirebig from "../media/pixelfirebig.gif";
 import bigrender from "../media/bigrender.bmp";
+import texblend2 from "../media/texblend2.gif";
+
+//Dialog contents
+import texblend from "./dialog/texblend.js";
 
 function Projects() {
+  //console.log("projects.js");
   const TextureBlending = {
     name: "Texture blending image reproduction",
     description:
       "Reproduces an input image using seamless textures from a texture database.",
-    image: starry,
+    image: texblend2,
     link: "https://github.com/Beckelund/texture-blending-image-reproduction",
+    dialog: texblend,
   };
 
   const PixelFire = {
@@ -40,8 +46,11 @@ function Projects() {
 
   return (
     <Container className="projects">
-      <Typography className="projectseperatetext">Current Projects:</Typography>
-      <LargeProjectCard project={TextureBlending}></LargeProjectCard>
+      <Typography className="projectseperatetext">Active Projects:</Typography>
+      <LargeProjectCard
+        project={TextureBlending}
+        dialog={texblend}
+      ></LargeProjectCard>
       <LargeProjectCard project={PixelFire}></LargeProjectCard>
       <Typography className="projectseperatetext">
         Previous Projects:

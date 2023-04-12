@@ -12,12 +12,16 @@ function Welcome() {
       <Typography className="s" variant="h1">
         Johan Bäcklund
       </Typography>
-      <Container className="links">
+      <Container
+        className="links"
+        sx={{ display: "flex", alignItems: "center" }}
+      >
         <Link
           href="https://github.com/Beckelund"
           rel="noopener noreferrer"
           color="inherit"
           target="_blank"
+          className="socials"
         >
           <GitHubIcon
             sx={{ fontSize: 80, color: "rgb(253, 246, 229);" }}
@@ -28,9 +32,10 @@ function Welcome() {
           rel="noopener noreferrer"
           color="inherit"
           target="_blank"
+          className="socials"
         >
           <LinkedInIcon
-            sx={{ fontSize: 80, color: "rgb(253, 246, 229);" }}
+            sx={{ fontSize: 90, color: "rgb(253, 246, 229);" }}
           ></LinkedInIcon>
         </Link>
       </Container>
