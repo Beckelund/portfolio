@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1132ddf4.css",
-    "main.js": "/portfolio/static/js/main.bf9cb74a.js",
+    "main.js": "/portfolio/static/js/main.4399abbd.js",
     "static/media/texblend.gif": "/portfolio/static/media/texblend.82229b035f75d062aaae.gif",
     "static/media/texblend2.gif": "/portfolio/static/media/texblend2.19df9afaaaae70168857.gif",
     "static/media/pixelfire.gif": "/portfolio/static/media/pixelfire.bdf5f694899b3e6278a4.gif",
+    "static/media/CascadedCausticMap.mp4": "/portfolio/static/media/CascadedCausticMap.eec5745eddd45c6bec64.mp4",
     "static/media/bigrender.bmp": "/portfolio/static/media/bigrender.4b5eface372b765e4c57.bmp",
     "static/media/WeddingBig.png": "/portfolio/static/media/WeddingBig.08d1688a88f5725afe32.png",
     "static/media/Starry_Night_full_size.png": "/portfolio/static/media/Starry_Night_full_size.708c826d94e0c0e6106e.png",
+    "static/media/causticvideo.mp4": "/portfolio/static/media/causticvideo.655547476cdc56947121.mp4",
     "static/media/great_wave.png": "/portfolio/static/media/great_wave.a559089b2ff71fafbe69.png",
     "static/media/Mona_Lisa.png": "/portfolio/static/media/Mona_Lisa.9b6d4db3bae8dabe9dbc.png",
+    "static/media/pixelfirelarge.mp4": "/portfolio/static/media/pixelfirelarge.7420e65d773d8029c380.mp4",
     "static/media/wanderer.png": "/portfolio/static/media/wanderer.d1db2f51f2a5e7bf3c3b.png",
     "static/media/Pearl4.png": "/portfolio/static/media/Pearl4.83632242ce0dc353950f.png",
     "index.html": "/portfolio/index.html",
     "main.1132ddf4.css.map": "/portfolio/static/css/main.1132ddf4.css.map",
-    "main.bf9cb74a.js.map": "/portfolio/static/js/main.bf9cb74a.js.map"
+    "main.4399abbd.js.map": "/portfolio/static/js/main.4399abbd.js.map"
   },
   "entrypoints": [
     "static/css/main.1132ddf4.css",
-    "static/js/main.bf9cb74a.js"
+    "static/js/main.4399abbd.js"
   ]
 }
