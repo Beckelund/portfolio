@@ -168,7 +168,18 @@ export const portfolioTheme = createTheme({
             position: "absolute",
             top: 0,
             right: 0,
+            width: "100%",
             height: "100%",
+            opacity: 0.8,
+            transition: "0.1s ease-out",
+          },
+        },
+        {
+          props: { className: "video" },
+          style: {
+            position: "absolute",
+            top: 0,
+            right: 0,
             width: "100%",
             opacity: 0.8,
             transition: "0.1s ease-out",

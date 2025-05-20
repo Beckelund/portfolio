@@ -32,6 +32,8 @@ function LargeProjectCard(props) {
   //Conditional display
   const showReadMore = props.project.dialog ? true : false;
   const showDemo = props.project.demo ? true : false;
+  const videoFormatThumbnail =
+    props.project.projectImageFormat === "video" ? true : false;
 
   //Open dialog window
   const [open, setOpen] = useState(false);
@@ -62,31 +64,46 @@ function LargeProjectCard(props) {
             <CardDialog closeFunction={handleClose} />
           </Dialog>
         )}
-        <CardMedia
-          component="img"
-          image={cardImage}
-          className="full"
-        ></CardMedia>
+        {videoFormatThumbnail ? (
+          <CardMedia
+            component="video"
+            image={cardImage}
+            className="video"
+            autoPlay="true"
+            muted="true"
+            loop="true"
+          ></CardMedia>
+        ) : (
+          <CardMedia
+            component="img"
+            image={cardImage}
+            className="full"
+          ></CardMedia>
+        )}
+
         <CardContent className="cardcontent">
           <Typography className="cardtitle" color="white">
             {cardTitle}
           </Typography>
           <Typography className="carddescription">{cardDescription}</Typography>
           <CardActions className="cardactions">
-            <Link
-              href={cardLink}
-              rel="noopener noreferrer"
-              color="inherit"
-              target="_blank"
-            >
-              <Button
-                variant="outlined"
-                className="card"
-                startIcon={<GitHubIcon />}
+            {cardLink !== null && (
+              <Link
+                href={cardLink}
+                rel="noopener noreferrer"
+                color="inherit"
+                target="_blank"
               >
-                Github
-              </Button>
-            </Link>
+                <Button
+                  variant="outlined"
+                  className="card"
+                  startIcon={<GitHubIcon />}
+                >
+                  Github
+                </Button>
+              </Link>
+            )}
+
             <Button
               variant="outlined"
               className="card"

@@ -25,8 +25,6 @@ import wedding_big from "../../media/texblend/WeddingBig.png";
 import wanderer from "../../media/texblend/wanderer.png";
 import pearl from "../../media/texblend/Pearl4.png";
 import starry from "../../media/texblend/Starry_Night_full_size.png";
-import { Padding } from "@mui/icons-material";
-import { useRef } from "react";
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -66,13 +64,23 @@ function texblend(props) {
             github
           </Link>
         </Box>
-        <Typography textAlign={"center"} margin={2}>
-          Takes an input image and generates a mosaic using textures from{" "}
+        <Typography width={"90%"} margin={4}>
+          This application generates a mosaic based on the input image using
+          textures from{" "}
           <Link href="https://ambientcg.com/" target="_blank">
             ambient.cg
           </Link>
         </Typography>
-
+        <Typography width={"90%"} margin={4}>
+          Segments of the image are matched to textures based on color
+          difference. The height/displacement maps of textures can be utilized
+          to introduce texture blending. Instances where two textures can be
+          matched to a color, the displacement map of a texture will decide
+          which texture is shown. Transitions between textures may also be set
+          to utilize the displacement maps. In the final image, this may produce
+          results where e.g. debris or vegetation is filled in the creases of
+          bricks.
+        </Typography>
         <Box
           sx={{
             width: "100%",
@@ -81,19 +89,17 @@ function texblend(props) {
           }}
         >
           <img
-            width={"20%"}
+            width={"30%"}
             src={texblendanim}
             alt="animation"
             loading="lazy"
           ></img>
         </Box>
-        <Typography textAlign={"center"} margin={4}>
-          The current version matches segments of the image to textures based on
-          color difference. I'm currently working on an improved version that
-          utilize displacement maps to achieve a natural texture blend.
-        </Typography>
-        <Typography textAlign={"center"} marginTop={4}>
-          Check out some results down below!
+        <Typography width={"90%"} margin={4}>
+          Using a low number of textures in the texture data set may produce a
+          more stylized result, where the texture blending is more noticable.
+          Using many textures allows for greater coverage in the color gamut,
+          where image reproduction is improved.
         </Typography>
         <Container
           width="100%"
